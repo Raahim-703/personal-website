@@ -15,6 +15,14 @@
     border-radius: 5px;
 }
 
+.mt {
+    margin-top: 10%;
+}
+
+.paragraph-color {
+    color: rgba(108, 108, 108, 1);
+}
+
 /* nav style */
 nav {
     display: flex;
@@ -55,7 +63,7 @@ nav ul li {
     align-items: center;
 }
 
-#size {
+.size {
     font-size: 3rem;
 }
 
@@ -63,14 +71,96 @@ nav ul li {
     width: 110%;
 }
 
+
+.part-3 {
+    background-color: rgb(242, 241, 241);
+}
+
+.part-3-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.part-3 h1 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    max-width: 80%;
+    margin: 5% auto;
+    gap: 3%;
+
+}
+
+.card {
+    max-width: 30%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.part-4 {
+    background-image: url("shapes/Group_33094_1.png");
+    max-width: 70%;
+    background-size: cover;
+    margin: 5% auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.part-4-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.part-4-container h1 {
+    color: white;
+}
+
+.btn {
+    padding: 0px 10px;
+}
+
+.footer-container {
+    max-width: 40%;
+    margin: 5% auto;
+}
+
+.footer-container h2,
+h1 {
+    text-align: center;
+    align-items: center;
+}
+
+.icon-container {
+    margin-left: 20%;
+}
+
+.icon-container img {
+    width: 18%;
+    align-items: center;
+    margin-right: 7%;
+}
+
 @media screen and (max-width:576px) {
 
     .header-section,
-    .part-2 {
+    .part-2,
+    .card-container {
         flex-direction: column;
     }
 
-    .header-text {
+    .card{
+        max-width: 80%;
+        margin-top: 4%;
+    }
+     .header-text {
         align-items: center;
         text-align: center;
     }
@@ -80,14 +170,22 @@ nav ul li {
 
     .header-section,
     .part-2 {
-        gap:15%;
+        gap: 15%;
     }
 
-    .header-img img ,.part-2-img img {
+    .header-img img,
+    .part-2-img img {
         width: 100%;
     }
 
     .header-text h1 {
         font-size: 2rem;
     }
+     .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     }
+     .card{
+        max-width:100%;
+     }
 }
