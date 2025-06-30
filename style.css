@@ -30,6 +30,7 @@ nav ul {
 nav ul li {
     list-style: none;
     margin-right: 50px;
+    font-weight: bolder;
 }
 
 .hello {
@@ -44,11 +45,49 @@ nav ul li {
     width: 90%;
 }
 
-.header-section {
+.header-section,
+.part-2 {
     display: flex;
     max-width: 80%;
     margin: 0px auto;
     gap: 20%;
     justify-content: center;
     align-items: center;
+}
+
+#size {
+    font-size: 3rem;
+}
+
+.part-2-img img {
+    width: 110%;
+}
+
+@media screen and (max-width:576px) {
+
+    .header-section,
+    .part-2 {
+        flex-direction: column;
+    }
+
+    .header-text {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:990px) {
+
+    .header-section,
+    .part-2 {
+        gap:15%;
+    }
+
+    .header-img img ,.part-2-img img {
+        width: 100%;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
 }
